@@ -17,27 +17,6 @@ nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => 
   menuButton?.setAttribute('aria-expanded', 'false');
 }));
 
-// Keep the homepage functional before the final photo library is copied from the
-// previous portfolio. The GitHub portrait is public, stable and already associated
-// with the same researcher identity.
-const portrait = document.querySelector('.portrait-wrap img');
-if (portrait) {
-  portrait.src = 'https://avatars.githubusercontent.com/u/112680258?v=4';
-  portrait.alt = 'Portrait of Dr Abderrahim Zermane, fire and process safety researcher';
-}
-
-// The user prefers a complete web profile rather than a downloadable CV.
-const headerAction = document.querySelector('.header-cta');
-if (headerAction) {
-  headerAction.href = '/about.html';
-  headerAction.textContent = 'About me';
-}
-
-document.querySelectorAll('a[href*="abderrahim-zermane-cv.pdf"]').forEach(link => {
-  link.href = '/about.html';
-  link.textContent = 'About';
-});
-
 const revealItems = document.querySelectorAll('.reveal');
 revealItems.forEach(item => {
   if (item.dataset.delay) item.style.setProperty('--delay', `${item.dataset.delay}ms`);
@@ -51,7 +30,7 @@ if ('IntersectionObserver' in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.13 });
+  }, { threshold: 0.12 });
   revealItems.forEach(item => observer.observe(item));
 } else {
   revealItems.forEach(item => item.classList.add('in-view'));
