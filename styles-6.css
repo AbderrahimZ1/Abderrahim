@@ -1,0 +1,78 @@
+:root{--ink:var(--brand-navy);--ink-2:#17324f;--ink-3:#204462;--paper:#f5f7f9;--text:#1b2a3d;--muted:#607084;--line:#d7dee7;--line-dark:#294a68;--amber:var(--brand-orange);--ember:#d96c16;--mint:#77bea9;--shadow:var(--shadow-lg)}
+body{background:var(--paper)}
+.site-header{background:rgba(245,247,249,.84)}
+.header-inner{min-height:82px}
+.brand{min-width:196px}
+.brand-logo{width:196px;height:68px;object-fit:contain}
+.brand-mark,.brand-text{display:none!important}
+.primary-nav a{color:#40516a;font-size:13px}
+.header-cta{background:var(--brand-navy)}
+
+.hero{min-height:820px;padding:142px 0 62px;background:linear-gradient(180deg,#f8fafb 0%,#f5f7f9 74%,#edf2f5 100%)}
+.hero::after{right:-15vw;top:-28vw;background:radial-gradient(circle,rgba(239,139,34,.17),rgba(40,108,158,.05) 47%,transparent 70%)}
+.hero-layout{grid-template-columns:.94fr 1.06fr;gap:64px}
+.hero-copy h1{max-width:680px;font-size:clamp(48px,5.8vw,74px);color:var(--brand-navy)}
+.hero-copy h1::after{height:5px;background:linear-gradient(90deg,var(--brand-orange),var(--brand-blue))}
+.hero-lead{max-width:660px;color:#53657a;font-size:18px}
+.hero-lead strong{color:var(--brand-navy)}
+.profile-links a{color:#586a7e}
+.profile-links a:hover{color:var(--brand-blue)}
+.hero-visual{min-height:560px}
+.portrait-wrap{width:338px;transform:none;border-radius:24px;border:1px solid rgba(18,53,93,.10);box-shadow:0 28px 70px rgba(16,35,59,.16)}
+.portrait-caption strong{color:var(--brand-navy)}
+.model-panel{width:min(530px,94%);bottom:0;background:#0f2945;border-color:#294d6f;box-shadow:0 30px 76px rgba(9,31,54,.28)}
+.model-header{border-color:#2d5275}
+.credibility-strip{margin-top:48px;border-color:rgba(18,53,93,.09);box-shadow:0 14px 42px rgba(18,53,93,.06)}
+.credibility-strip strong{color:var(--brand-navy)}
+.section-number{background:var(--brand-navy);color:#fff}
+.section-heading h2,.teaching-copy h2,.contact-section h2{color:var(--brand-navy)}
+.pillar::before{background:linear-gradient(90deg,var(--brand-orange),var(--brand-blue))}
+.pillar li::before{border-color:var(--brand-orange)}
+.strength-band{background:var(--brand-navy)}
+.flagship-card{border-color:#d5dee7;box-shadow:0 18px 52px rgba(18,53,93,.06)}
+.flagship-media{background:#edf2f5}
+.flagship-copy a,.text-link{color:var(--brand-blue)}
+.finding-points span::before{background:linear-gradient(135deg,var(--brand-orange),var(--brand-blue))}
+.publication-list article>a{color:var(--brand-navy)}
+.project-feature{background:var(--brand-navy)}
+.project-copy a{color:#ffb25b}
+.project-photo::after{background:linear-gradient(180deg,transparent 38%,rgba(10,32,55,.78))}
+.education-panel{background:var(--brand-navy)}
+.contact-section{background:#0d2946}
+.contact-email{color:#ffb25b}
+.contact-links a{border-color:#3c607f}
+
+.research-approach{margin-top:48px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr);gap:28px;align-items:stretch}
+.research-approach .model-panel{position:relative;left:auto;bottom:auto;width:100%;height:100%}
+.research-approach-copy{padding:34px;border:1px solid var(--line);border-radius:20px;background:#fff}
+.research-approach-copy h3{margin:0 0 14px;font:760 27px/1.2 "Manrope",sans-serif;color:var(--brand-navy)}
+.research-approach-copy p{margin:0;color:var(--muted)}
+.research-approach-copy ul{margin:24px 0 0;padding-left:20px;color:#516176}
+.research-approach-copy li{margin:9px 0}
+
+@media(max-width:1040px){
+  .hero-layout{gap:38px}
+  .portrait-wrap{width:280px}
+  .research-approach{grid-template-columns:1fr}
+}
+@media(max-width:920px){
+  .header-inner{min-height:82px}
+  .brand{min-width:164px}
+  .brand-logo{width:164px;height:60px}
+  .hero{padding-top:126px;min-height:auto}
+  .hero-layout{grid-template-columns:1fr}
+  .hero-visual{min-height:540px}
+  .portrait-wrap{right:0}
+}
+@media(max-width:560px){
+  .header-inner{min-height:72px}
+  .brand{min-width:138px}
+  .brand-logo{width:138px;height:54px}
+  .hero{padding-top:110px}
+  .hero-copy h1{font-size:42px}
+  .hero-visual{min-height:500px}
+  .portrait-wrap{width:210px}
+  .model-panel{width:100%}
+  .credibility-strip{margin-top:36px}
+  .research-approach-copy{padding:25px}
+}
