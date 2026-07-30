@@ -21,7 +21,8 @@
 .teaching-copy .section-number { margin-bottom: 28px; }
 .teaching-copy p { margin: 22px 0 28px; font-size: 17px; color: var(--muted); max-width: 650px; }
 .teaching-topics { display: flex; flex-wrap: wrap; gap: 8px; }
-.teaching-topics span { border: 1px solid var(--line); border-radius: 999px; padding: 9px 12px; font-size: 11px; font-weight: 700; color: #5f6b7e; }
+.teaching-topics span, .teaching-topics a { border: 1px solid var(--line); border-radius: 999px; padding: 9px 12px; font-size: 11px; font-weight: 700; color: #5f6b7e; text-decoration: none; transition: color .2s, border-color .2s, transform .2s; }
+.teaching-topics a:hover, .teaching-topics a:focus-visible { color: var(--ember); border-color: var(--ember); transform: translateY(-1px); }
 .collaboration-card { padding: 40px; border-radius: 20px; background: #f0f2f3; border: 1px solid #dfe3e7; }
 .collaboration-card h3 { margin: 0; font: 750 25px/1.2 "Manrope", sans-serif; }
 .collaboration-card ul { margin: 24px 0 32px; padding-left: 20px; color: #596679; }
