@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Dr Abderrahim Zermane explains why machine-learning models used in safety must remain interpretable, traceable and connected to prevention decisions." />
+  <meta name="author" content="Dr Abderrahim Zermane" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="canonical" href="https://azermane.com/insights/explainable-ml-safety.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Why Explainable Machine Learning Matters in Safety | Abderrahim Zermane" />
+  <meta property="og:description" content="A practical research perspective on predictive safety models, interpretability, data limitations and human oversight." />
+  <meta property="og:url" content="https://azermane.com/insights/explainable-ml-safety.html" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/112680258?v=4" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Explainable Machine Learning for Safety | Dr Abderrahim Zermane</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../content.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "@id":"https://azermane.com/insights/explainable-ml-safety.html#article",
+    "headline":"Why Explainable Machine Learning Matters in Safety",
+    "description":"A practical research perspective on predictive safety models, interpretability, data limitations and human oversight.",
+    "datePublished":"2026-07-30",
+    "dateModified":"2026-07-30",
+    "mainEntityOfPage":"https://azermane.com/insights/explainable-ml-safety.html",
+    "author":{"@id":"https://azermane.com/#abderrahim-zermane"},
+    "publisher":{"@type":"Person","@id":"https://azermane.com/#abderrahim-zermane","name":"Dr Abderrahim Zermane"},
+    "image":"https://avatars.githubusercontent.com/u/112680258?v=4",
+    "about":["Explainable machine learning","Safety analytics","Occupational accidents","Random forest","Risk management"]
+  }
+  </script>
+</head>
+<body>
+  <header class="content-header"><div class="shell"><a class="content-brand" href="/"><b>AZ</b><span>Abderrahim Zermane</span></a><nav class="content-nav" aria-label="Main navigation"><a href="/about.html">About</a><a href="/publications.html">Publications</a><a href="/projects.html">Projects</a><a href="/#contact">Contact</a></nav></div></header>
+  <main>
+    <article>
+      <header class="page-hero">
+        <div class="shell">
+          <span class="eyebrow">Research insight · Safety analytics</span>
+          <h1>Why explainable machine learning matters in safety</h1>
+          <p>A predictive model has little safety value if the people responsible for prevention cannot understand what shaped its output, where the data are weak, or what action the result supports.</p>
+          <div class="article-meta"><span>By Dr Abderrahim Zermane</span><span>30 July 2026</span><span>Based on research published in Safety Science</span></div>
+        </div>
+      </header>
+      <section class="content-section">
+        <div class="shell article-body">
+          <h2>Prediction is not the same as prevention</h2>
+          <p>Machine learning can identify patterns in accident data that are difficult to see through manual review alone. It can compare many variables, find non-linear relationships and generate repeatable predictions. But safety management is not a leaderboard exercise. A small increase in predictive accuracy is not automatically more useful than a slightly simpler model whose reasoning can be examined and challenged.</p>
+          <p>The central question should be: can the model help a competent person make a better prevention decision? That requires transparency about the dataset, target variable, factor definitions, class balance, validation method, uncertainty and the practical meaning of an output.</p>
+
+          <h2>What the fatal-fall study tested</h2>
+          <p>In my research on fatal falls from height in the Malaysian construction industry, seven machine-learning approaches were tested using 3,321 accident scenarios. The dataset contained information such as date, activity, region, accident summary, direct cause, root cause and contributing factors.</p>
+          <p>Random forest classification was selected for the main model. The study examined site conditions, management factors, individual characteristics and agent factors separately and also produced ensemble predictions from the complete set of characteristics. Management and individual factors performed strongly across several models, while agent factors recorded the highest accuracy within the random forest analysis.</p>
+          <blockquote>A safety model becomes useful when it moves the discussion from “the algorithm predicts this” to “these evidence patterns influenced the result, these limitations remain, and these controls should now be reviewed.”</blockquote>
+
+          <h2>Why random forests can be useful—and where caution is needed</h2>
+          <p>Random forests can model complex interactions without requiring every relationship to be specified in advance. They are relatively robust, can handle mixed patterns and provide ways to examine feature importance. These qualities make them attractive for administrative accident datasets.</p>
+          <p>However, feature importance is not proof of causation. A variable can be predictive because it is a proxy for something else, because the reporting process made it more visible, or because categories were recorded inconsistently. The model can also inherit missingness, under-reporting and organisational bias from the source data.</p>
+          <p>For this reason, an explainable workflow should combine model outputs with engineering reasoning, structured incident analysis and domain review. It should not treat the model as an autonomous safety authority.</p>
+
+          <h2>Six requirements for decision-grade safety analytics</h2>
+          <ol>
+            <li><strong>Preserve data provenance.</strong> Record where every observation came from and how variables were extracted or reconstructed.</li>
+            <li><strong>Define the prediction target clearly.</strong> Users must know exactly what the model predicts and what it does not.</li>
+            <li><strong>Address imbalance and calibration.</strong> Accuracy alone can hide poor performance on the outcome that matters most.</li>
+            <li><strong>Show factor influence in understandable language.</strong> Outputs should connect model behaviour to site, management, worker and equipment conditions.</li>
+            <li><strong>Retain uncertainty and unsupported fields.</strong> Missing evidence should remain visible rather than being silently filled with confident-looking values.</li>
+            <li><strong>Keep a human correction path.</strong> Competent reviewers must be able to challenge categories, justifications and conclusions.</li>
+          </ol>
+
+          <h2>From a research model to a safety decision system</h2>
+          <p>The same principles apply when machine intelligence is embedded in software. In environmental review, construction design assurance or incident learning, the system should retain source excerpts, page references, confidence, assumptions and an audit trail. The user should be able to see how a finding was formed and correct it without destroying the original evidence.</p>
+          <p>This is the direction of my current work: not merely applying machine learning to safety data, but designing evidence contracts around the model so that its output can be reviewed, improved and used responsibly.</p>
+
+          <h2>Related research</h2>
+          <p class="source-note">This article is an explanatory overview of a peer-reviewed study. Consult the original paper for the complete methodology, model evaluation and limitations.</p>
+          <ul>
+            <li><a href="https://doi.org/10.1016/j.ssci.2022.106023" target="_blank" rel="noreferrer">Predicting fatal fall from heights accidents using random forest classification machine-learning model</a></li>
+            <li><a href="https://doi.org/10.1541/ieejjia.24002974" target="_blank" rel="noreferrer">Technical analysis of occupational fatal accidents in Malaysia using machine-learning techniques</a></li>
+          </ul>
+          <div class="related"><a href="/insights/fatal-falls-malaysia.html">Read: What fatal falls data reveal →</a><a href="/projects.html">Explore decision-support projects →</a></div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="shell"><span>© 2026 Dr Abderrahim Zermane</span><nav><a href="/">Home</a><a href="/publications.html">Publications</a><a href="/projects.html">Projects</a></nav></div></footer>
+</body>
+</html>
