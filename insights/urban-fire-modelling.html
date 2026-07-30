@@ -3,108 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#12355d" />
   <meta name="description" content="Dr Abderrahim Zermane explains city-scale urban fire-spread modelling, exposure, scenario planning, validation and uncertainty within multi-hazard decision frameworks." />
   <meta name="author" content="Dr Abderrahim Zermane" />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
   <link rel="canonical" href="https://azermane.com/insights/urban-fire-modelling.html" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="City-Scale Urban Fire Modelling for Risk-Informed Planning | Abderrahim Zermane" />
+  <meta property="og:title" content="City-Scale Urban Fire Modelling for Risk-Informed Planning | Dr Abderrahim Zermane" />
   <meta property="og:description" content="How city-scale fire models connect buildings, fire dynamics, exposure, uncertainty and planning decisions." />
   <meta property="og:url" content="https://azermane.com/insights/urban-fire-modelling.html" />
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/112680258?v=4" />
+  <meta property="og:image" content="https://azermane.com/assets/ucl-research-meeting.jpg" />
+  <meta property="og:image:alt" content="Research discussion and modelling collaboration at University College London" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="/assets/favicon.svg?v=20260730" type="image/svg+xml" />
-  <link rel="alternate icon" href="/assets/logo.png?v=20260730" type="image/png" />
-  <link rel="apple-touch-icon" href="/assets/logo.png?v=20260730" />
   <title>City-Scale Urban Fire Modelling | Dr Abderrahim Zermane</title>
+  <link rel="icon" type="image/png" href="/assets/logo.png?v=20260731" />
+  <link rel="apple-touch-icon" href="/assets/logo.png?v=20260731" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../content.css" />
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Article",
-    "@id":"https://azermane.com/insights/urban-fire-modelling.html#article",
-    "headline":"City-Scale Urban Fire Modelling for Risk-Informed Planning",
-    "description":"How city-scale fire models connect buildings, fire dynamics, exposure, uncertainty and planning decisions.",
-    "datePublished":"2026-07-30",
-    "dateModified":"2026-07-30",
-    "mainEntityOfPage":"https://azermane.com/insights/urban-fire-modelling.html",
-    "author":{"@id":"https://azermane.com/#abderrahim-zermane"},
-    "publisher":{"@type":"Person","@id":"https://azermane.com/#abderrahim-zermane","name":"Dr Abderrahim Zermane"},
-    "image":"https://avatars.githubusercontent.com/u/112680258?v=4",
-    "about":["Urban fire spread","Physics-based fire modelling","City-scale risk","Multi-hazard planning","Model validation"]
-  }
-  </script>
+  <link rel="stylesheet" href="/content.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://azermane.com/insights/urban-fire-modelling.html#article","headline":"City-Scale Urban Fire Modelling for Risk-Informed Planning","description":"How city-scale fire models connect buildings, fire dynamics, exposure, uncertainty and planning decisions.","datePublished":"2026-07-30","dateModified":"2026-07-31","mainEntityOfPage":"https://azermane.com/insights/urban-fire-modelling.html","author":{"@id":"https://azermane.com/#abderrahim-zermane"},"publisher":{"@type":"Person","@id":"https://azermane.com/#abderrahim-zermane","name":"Dr Abderrahim Zermane"},"image":"https://azermane.com/assets/ucl-research-meeting.jpg","about":["Urban fire spread","Physics-based fire modelling","City-scale risk","Multi-hazard planning","Model validation"]}</script>
 </head>
 <body>
-  <header class="content-header">
-    <div class="shell">
-      <a class="content-brand" href="/"><b>AZ</b><span>Abderrahim Zermane</span></a>
-      <nav class="content-nav" aria-label="Main navigation">
-        <a href="/about.html">About</a>
-        <a href="/publications.html">Publications</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/#contact">Contact</a>
-      </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Dr Abderrahim Zermane homepage"><img class="brand-logo" src="/assets/logo_writing.png?v=20260731" alt="Dr Abderrahim Zermane — Fire Safety and Process Safety Engineering" width="196" height="68" /></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="/about.html">About</a><a href="/publications.html">Publications</a><a href="/projects.html">Projects</a><a href="/#contact">Contact</a></nav>
+      <a class="header-cta" href="/#contact">Collaborate</a>
     </div>
   </header>
-  <main>
+
+  <main id="main">
     <article>
-      <header class="page-hero">
-        <div class="shell">
-          <span class="eyebrow">Research insight · Urban fire safety</span>
-          <h1>City-scale urban fire modelling for risk-informed planning</h1>
-          <p>Urban fire models must connect local fire behaviour to building exposure, district structure, uncertainty and the practical decisions made before a disaster occurs.</p>
-          <div class="article-meta"><span>By Dr Abderrahim Zermane</span><span>30 July 2026</span><span>Research developed through University College London and the Open Urban Fire Framework</span></div>
-        </div>
-      </header>
-      <section class="content-section">
-        <div class="shell article-body">
-          <h2>Why the city scale changes the fire-safety question</h2>
-          <p>Traditional fire engineering often focuses on one compartment, one building or one prescribed design scenario. At city scale, the problem changes. The modeller must consider many buildings with incomplete information, different uses and construction characteristics, uncertain fuel loads, variable spacing, external exposure and the possibility that one local fire becomes part of a wider sequence.</p>
-          <p>The goal is not to reproduce every flame and plume across an entire city. It is to create a transparent scenario framework that preserves the fire mechanisms important to the planning question while remaining computationally practical and honest about uncertainty.</p>
-
-          <h2>From building footprints to exposure pathways</h2>
-          <p>A city-scale workflow begins with the physical arrangement of the building stock. Building footprints can be imported from GeoJSON or comparable spatial sources, converted to a local coordinate system and classified by use where attributes are available. Because map data are incomplete, inferred classifications should carry a confidence value rather than being presented as certain facts.</p>
-          <p>Compartment assumptions and fuel-load ranges are then assigned in a controlled way. These assumptions determine the available fire severity and duration, but they must remain visible so users can distinguish measured data from inferred values.</p>
-          <blockquote>The model should not hide uncertainty behind a clean map. A useful map shows what may burn, what may ignite, how confident the model is, and which assumptions produced that result.</blockquote>
-
-          <h2>Reduced physics needs an explicit equation basis</h2>
-          <p>Detailed computational fluid dynamics can provide high-resolution information for selected buildings or mechanisms, but it is not always practical for large scenario sets. A reduced-order fire-spread kernel can represent the governing relationships at a lower computational cost, provided the equation basis, domains of use and simplifications are documented.</p>
-          <p>My open framework treats the reduced kernel as a scientific workflow rather than a black box. The repository separates the fire engine, scenario definitions, supporting data, district cases, verification tools, FDS-reference templates and manuscript outputs. This makes it possible to test components independently and trace a result back to the scenario inputs.</p>
-
-          <h2>Verification is not validation</h2>
-          <p>One of the most important disciplines in modelling is using the word “validated” correctly. A code can be verified against equations, unit tests and benchmark behaviour without yet being validated against suitable experiments, detailed simulations or real incidents.</p>
-          <p>The Open Urban Fire Framework includes FDS input templates and comparison tooling, but it does not claim external validation until actual reference outputs are inserted. Pending comparison rows remain labelled as pending. This is deliberate: a template for evidence is not the evidence itself.</p>
-          <p>Release-audit scripts check repository metadata, required scientific folders, scenario integrity, importability and reproducibility manifests. These checks do not prove that every physical prediction is correct, but they reduce avoidable software and traceability errors.</p>
-
-          <h2>Uncertainty maps are often more useful than a single deterministic answer</h2>
-          <p>At city scale, uncertain building use, fuel load, compartment arrangement, ignition conditions and exposure response can dominate the result. Running one scenario with one set of assumptions produces a precise-looking map that may be misleading.</p>
-          <p>Probabilistic burn, ignition and confidence maps communicate a more decision-relevant picture. They help identify locations where many plausible scenarios produce similar concern, and locations where the result depends strongly on uncertain inputs. This supports prioritisation for data collection, inspection, response planning and resilience interventions.</p>
-
-          <h2>Integration with multi-hazard and fragility frameworks</h2>
-          <p>Within Tomorrow's Cities, urban fire modelling was not treated as an isolated technical product. It was integrated into a wider workflow linking hazard, exposure, fragility and impact. That integration required common scenario definitions, compatible spatial information and outputs that could be interpreted alongside other hazards.</p>
-          <p>Tenability and threshold reasoning become particularly important in this context. The planner needs to know not only whether a fire spreads, but when conditions cross a decision-relevant threshold and which assets, populations or response capacities may be affected.</p>
-
-          <h2>What a decision-grade urban fire model should provide</h2>
-          <ol>
-            <li><strong>Traceable inputs.</strong> Building, use, fuel and scenario assumptions must be distinguishable from measured data.</li>
-            <li><strong>Documented equations and limitations.</strong> Reduced physics should be open to technical review.</li>
-            <li><strong>Verification and validation status.</strong> Completed evidence and pending evidence must not be mixed.</li>
-            <li><strong>Uncertainty-aware outputs.</strong> Probability and confidence should accompany deterministic maps where possible.</li>
-            <li><strong>Reproducible scenarios.</strong> Another researcher should be able to rerun the model and understand why the output changed.</li>
-            <li><strong>Decision framing.</strong> Maps and metrics should answer a planning, resilience or response question rather than exist only as a technical demonstration.</li>
-          </ol>
-
-          <h2>Related project pages</h2>
-          <p class="source-note">The Open Urban Fire Framework is currently a research-alpha and publication-development workflow. It is not a substitute for detailed fire-engineering design or local authority assessment.</p>
-          <div class="related"><a href="/projects.html">Explore the urban fire projects →</a><a href="/about.html">About Dr Abderrahim Zermane →</a></div>
-        </div>
-      </section>
+      <header class="page-hero"><div class="shell"><span class="eyebrow">Research insight · Urban fire safety</span><h1>City-scale urban fire modelling for risk-informed planning</h1><p>Urban fire models must connect local fire behaviour to building exposure, district structure, uncertainty and the practical decisions made before a disaster occurs.</p><div class="article-meta"><span>By Dr Abderrahim Zermane</span><span>30 July 2026</span><span>Research developed through University College London and the Open Urban Fire Framework</span></div></div></header>
+      <section class="content-section"><div class="shell article-body">
+        <h2>Why the city scale changes the fire-safety question</h2>
+        <p>Traditional fire engineering often focuses on one compartment, one building or one prescribed design scenario. At city scale, the problem changes. The modeller must consider many buildings with incomplete information, different uses and construction characteristics, uncertain fuel loads, variable spacing, external exposure and the possibility that one local fire becomes part of a wider sequence.</p>
+        <p>The goal is not to reproduce every flame and plume across an entire city. It is to create a transparent scenario framework that preserves the fire mechanisms important to the planning question while remaining computationally practical and honest about uncertainty.</p>
+        <h2>From building footprints to exposure pathways</h2>
+        <p>A city-scale workflow begins with the physical arrangement of the building stock. Building footprints can be imported from GeoJSON or comparable spatial sources, converted to a local coordinate system and classified by use where attributes are available. Because map data are incomplete, inferred classifications should carry a confidence value rather than being presented as certain facts.</p>
+        <p>Compartment assumptions and fuel-load ranges are then assigned in a controlled way. These assumptions determine the available fire severity and duration, but they must remain visible so users can distinguish measured data from inferred values.</p>
+        <blockquote>The model should not hide uncertainty behind a clean map. A useful map shows what may burn, what may ignite, how confident the model is, and which assumptions produced that result.</blockquote>
+        <h2>Reduced physics needs an explicit equation basis</h2>
+        <p>Detailed computational fluid dynamics can provide high-resolution information for selected buildings or mechanisms, but it is not always practical for large scenario sets. A reduced-order fire-spread kernel can represent the governing relationships at a lower computational cost, provided the equation basis, domains of use and simplifications are documented.</p>
+        <p>My open framework treats the reduced kernel as a scientific workflow rather than a black box. The repository separates the fire engine, scenario definitions, supporting data, district cases, verification tools, FDS-reference templates and manuscript outputs. This makes it possible to test components independently and trace a result back to the scenario inputs.</p>
+        <h2>Verification is not validation</h2>
+        <p>One of the most important disciplines in modelling is using the word “validated” correctly. A code can be verified against equations, unit tests and benchmark behaviour without yet being validated against suitable experiments, detailed simulations or real incidents.</p>
+        <p>The Open Urban Fire Framework includes FDS input templates and comparison tooling, but it does not claim external validation until actual reference outputs are inserted. Pending comparison rows remain labelled as pending. This is deliberate: a template for evidence is not the evidence itself.</p>
+        <p>Release-audit scripts check repository metadata, required scientific folders, scenario integrity, importability and reproducibility manifests. These checks do not prove that every physical prediction is correct, but they reduce avoidable software and traceability errors.</p>
+        <h2>Uncertainty maps are often more useful than a single deterministic answer</h2>
+        <p>At city scale, uncertain building use, fuel load, compartment arrangement, ignition conditions and exposure response can dominate the result. Running one scenario with one set of assumptions produces a precise-looking map that may be misleading.</p>
+        <p>Probabilistic burn, ignition and confidence maps communicate a more decision-relevant picture. They help identify locations where many plausible scenarios produce similar concern, and locations where the result depends strongly on uncertain inputs. This supports prioritisation for data collection, inspection, response planning and resilience interventions.</p>
+        <h2>Integration with multi-hazard and fragility frameworks</h2>
+        <p>Within Tomorrow's Cities, urban fire modelling was not treated as an isolated technical product. It was integrated into a wider workflow linking hazard, exposure, fragility and impact. That integration required common scenario definitions, compatible spatial information and outputs that could be interpreted alongside other hazards.</p>
+        <p>Tenability and threshold reasoning become particularly important in this context. The planner needs to know not only whether a fire spreads, but when conditions cross a decision-relevant threshold and which assets, populations or response capacities may be affected.</p>
+        <h2>What a decision-grade urban fire model should provide</h2>
+        <ol><li><strong>Traceable inputs.</strong> Building, use, fuel and scenario assumptions must be distinguishable from measured data.</li><li><strong>Documented equations and limitations.</strong> Reduced physics should be open to technical review.</li><li><strong>Verification and validation status.</strong> Completed evidence and pending evidence must not be mixed.</li><li><strong>Uncertainty-aware outputs.</strong> Probability and confidence should accompany deterministic maps where possible.</li><li><strong>Reproducible scenarios.</strong> Another researcher should be able to rerun the model and understand why the output changed.</li><li><strong>Decision framing.</strong> Maps and metrics should answer a planning, resilience or response question rather than exist only as a technical demonstration.</li></ol>
+        <h2>Related project pages</h2>
+        <p class="source-note">The Open Urban Fire Framework is currently a research-alpha and publication-development workflow. It is not a substitute for detailed fire-engineering design or local authority assessment.</p>
+        <div class="related"><a href="/projects.html">Explore the urban fire projects →</a><a href="/about.html">About Dr Abderrahim Zermane →</a></div>
+      </div></section>
     </article>
   </main>
-  <footer class="site-footer"><div class="shell"><span>© 2026 Dr Abderrahim Zermane</span><nav><a href="/">Home</a><a href="/publications.html">Publications</a><a href="/projects.html">Projects</a></nav></div></footer>
+
+  <footer class="site-footer"><div class="shell"><span>© <span data-year></span> Dr Abderrahim Zermane</span><nav aria-label="Footer navigation"><a href="/">Home</a><a href="/publications.html">Publications</a><a href="/projects.html">Projects</a></nav></div></footer>
+  <script src="/script.js"></script>
 </body>
 </html>
