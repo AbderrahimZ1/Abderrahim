@@ -1,0 +1,38 @@
+.publications-section { background: #eef0f1; }
+.finding-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.finding-card { background: var(--white); border: 1px solid #d9dee4; border-radius: 18px; padding: 30px; min-height: 480px; display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(11,19,32,.04); }
+.finding-meta { display: flex; justify-content: space-between; gap: 16px; color: #7b8798; font-size: 11px; text-transform: uppercase; letter-spacing: .07em; }
+.finding-card h3 { margin: 42px 0 16px; max-width: 520px; font: 750 27px/1.23 "Manrope", sans-serif; color: var(--ink); letter-spacing: -.03em; }
+.finding-card > p { color: var(--muted); font-size: 15px; }
+.finding-card > a { margin-top: auto; font-weight: 700; font-size: 13px; text-decoration: none; color: var(--ember); }
+.mini-bars { margin: 24px 0 28px; display: grid; gap: 11px; }
+.mini-bars div { display: grid; grid-template-columns: 155px 1fr 50px; align-items: center; gap: 11px; font-size: 11px; color: #5e6a7d; }
+.mini-bars i { position: relative; height: 7px; border-radius: 10px; background: #edf0f3; overflow: hidden; }
+.mini-bars i::before { content: ""; display: block; width: var(--v); height: 100%; background: linear-gradient(90deg, var(--amber), var(--ember)); border-radius: 10px; }
+.mini-bars b { color: var(--ink); font-size: 11px; }
+.stat-pair { display: grid; grid-template-columns: 1fr 1fr; margin: 28px 0 32px; gap: 12px; }
+.stat-pair div { padding: 18px; background: #f4f5f5; border-radius: 12px; }
+.stat-pair strong { display: block; font: 800 32px/1 "Manrope", sans-serif; color: var(--ember); }
+.stat-pair span { display: block; margin-top: 8px; font-size: 11px; color: var(--muted); }
+.model-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 32px; }
+.model-chips span { min-width: 48px; text-align: center; border-radius: 8px; padding: 9px 11px; color: #546176; background: #f0f2f4; font-size: 11px; font-weight: 800; }
+.model-chips span:first-child { color: var(--white); background: var(--ink); }
+.pathway-graphic { display: flex; align-items: center; gap: 14px; margin: 28px 0 36px; font-size: 11px; font-weight: 700; color: #687486; }
+.pathway-graphic i { position: relative; flex: 1; height: 2px; background: linear-gradient(90deg, #c8ced6, var(--amber), var(--ember)); }
+.pathway-graphic i::before, .pathway-graphic i::after { content: ""; position: absolute; top: 50%; width: 11px; height: 11px; transform: translateY(-50%); border-radius: 50%; background: var(--white); border: 3px solid var(--amber); }
+.pathway-graphic i::before { left: 20%; }.pathway-graphic i::after { right: 10%; border-color: var(--ember); }
+.pathway-graphic strong { color: var(--ink); }
+.publication-library { margin-top: 64px; background: var(--white); border-radius: 20px; padding: 34px; border: 1px solid #d9dee4; }
+.library-head { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+.library-head h3 { margin: 0; font: 750 24px/1.2 "Manrope", sans-serif; }
+.filter-group { display: flex; flex-wrap: wrap; gap: 7px; }
+.filter { border: 1px solid #d9dee4; border-radius: 999px; background: var(--white); color: #5c687b; padding: 8px 12px; font-size: 11px; font-weight: 700; cursor: pointer; }
+.filter.active, .filter:hover { background: var(--ink); color: var(--white); border-color: var(--ink); }
+.publication-list { border-top: 1px solid var(--line); }
+.publication-list article { display: grid; grid-template-columns: 68px 1fr 32px; gap: 16px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); transition: opacity .2s, transform .2s; }
+.publication-list article.hidden { display: none; }
+.pub-year { font: 800 13px/1 "Manrope", sans-serif; color: var(--ember); }
+.publication-list h4 { margin: 0; font: 700 15px/1.45 "Manrope", sans-serif; color: var(--ink); }
+.publication-list p { margin: 4px 0 0; color: #7b8797; font-size: 12px; }
+.publication-list article > a { text-decoration: none; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: #f1f3f4; font-weight: 800; }
+.text-link { display: inline-block; margin-top: 24px; color: var(--ember); font-size: 13px; font-weight: 700; text-decoration: none; }
