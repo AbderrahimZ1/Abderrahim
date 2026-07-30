@@ -1,0 +1,35 @@
+# Dr Abderrahim Zermane
+
+Official website: https://azermane.com/
+
+Dr Abderrahim Zermane is a fire and process safety researcher specialising in physics-based urban fire modelling, occupational accident prevention, fault tree analysis, explainable machine learning, construction safety and evidence-led decision systems.
+
+## Author identity
+
+- Google Scholar: https://scholar.google.com/citations?user=9ZkzMtcAAAAJ&hl=en
+- ORCID: https://orcid.org/0000-0001-5040-7704
+- GitHub: https://github.com/AbderrahimZ1
+
+## Main pages
+
+- Biography: https://azermane.com/about.html
+- Publications: https://azermane.com/publications.html
+- Projects: https://azermane.com/projects.html
+
+## Research insights
+
+- Fatal falls and construction safety in Malaysia: https://azermane.com/insights/fatal-falls-malaysia.html
+- Explainable machine learning for safety: https://azermane.com/insights/explainable-ml-safety.html
+- City-scale urban fire modelling: https://azermane.com/insights/urban-fire-modelling.html
+
+## Selected projects
+
+- Tomorrow's Cities urban fire modelling
+- City-scale Fire Spread Model
+- Open Urban Fire Framework
+- SEED EIA
+- Design Safety MY
+- OSHKKP Malaysia Cloud
+- Amane QHSE Cloud
+
+For research collaboration or corrections, contact zermane.abderrahim@gmail.com.
