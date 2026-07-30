@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://azermane.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://azermane.com/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://azermane.com/about.html</loc><lastmod>2026-07-30</lastmod><changefreq>yearly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://azermane.com/publications.html</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://azermane.com/projects.html</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://azermane.com/insights/fatal-falls-malaysia.html</loc><lastmod>2026-07-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://azermane.com/insights/explainable-ml-safety.html</loc><lastmod>2026-07-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://azermane.com/insights/urban-fire-modelling.html</loc><lastmod>2026-07-30</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>
