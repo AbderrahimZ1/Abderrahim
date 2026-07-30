@@ -2,13 +2,13 @@ const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.primary-nav');
 
-const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 24);
+const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
 updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
 
 menuButton?.addEventListener('click', () => {
-  const open = !nav.classList.contains('open');
-  nav.classList.toggle('open', open);
+  const open = !nav?.classList.contains('open');
+  nav?.classList.toggle('open', open);
   menuButton.setAttribute('aria-expanded', String(open));
 });
 
@@ -16,6 +16,27 @@ nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => 
   nav.classList.remove('open');
   menuButton?.setAttribute('aria-expanded', 'false');
 }));
+
+// Keep the homepage functional before the final photo library is copied from the
+// previous portfolio. The GitHub portrait is public, stable and already associated
+// with the same researcher identity.
+const portrait = document.querySelector('.portrait-wrap img');
+if (portrait) {
+  portrait.src = 'https://avatars.githubusercontent.com/u/112680258?v=4';
+  portrait.alt = 'Portrait of Dr Abderrahim Zermane, fire and process safety researcher';
+}
+
+// The user prefers a complete web profile rather than a downloadable CV.
+const headerAction = document.querySelector('.header-cta');
+if (headerAction) {
+  headerAction.href = '/about.html';
+  headerAction.textContent = 'About me';
+}
+
+document.querySelectorAll('a[href*="abderrahim-zermane-cv.pdf"]').forEach(link => {
+  link.href = '/about.html';
+  link.textContent = 'About';
+});
 
 const revealItems = document.querySelectorAll('.reveal');
 revealItems.forEach(item => {
@@ -48,4 +69,5 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
   });
 }));
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
