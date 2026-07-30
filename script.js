@@ -2,6 +2,13 @@ const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.primary-nav');
 
+// Force the current branded favicon instead of a cached initials icon.
+const favicon = document.querySelector('link[rel="icon"]') ?? document.createElement('link');
+favicon.rel = 'icon';
+favicon.type = 'image/svg+xml';
+favicon.href = '/assets/favicon.svg?v=20260730';
+if (!favicon.parentNode) document.head.appendChild(favicon);
+
 const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
 updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
