@@ -2,7 +2,7 @@
 
 Official website: https://azermane.com/
 
-Dr Abderrahim Zermane is a fire and process safety researcher specialising in physics-based urban fire modelling, occupational accident prevention, fault tree analysis, explainable machine learning, construction safety and evidence-led decision systems.
+Dr Abderrahim Zermane is a fire and process safety researcher working across occupational accident prevention, fault tree analysis, explainable machine learning, hydrogen fire safety, physics-based urban fire modelling and evidence-led engineering systems.
 
 ## Author identity
 
@@ -12,9 +12,16 @@ Dr Abderrahim Zermane is a fire and process safety researcher specialising in ph
 
 ## Main pages
 
+- Homepage: https://azermane.com/
 - Biography: https://azermane.com/about.html
 - Publications: https://azermane.com/publications.html
 - Projects: https://azermane.com/projects.html
+
+## Flagship publications
+
+1. Predicting fatal fall from heights accidents using random forest classification machine-learning model — Safety Science, 2023. https://azermane.com/paper-random-forest.html
+2. Risk assessment of fatal accidents due to work-at-heights activities using fault tree analysis: Case study in Malaysia — Safety Science, 2022. https://azermane.com/paper-fault-tree.html
+3. Linking Accident Data and Physics-Based Modeling for Hydrogen Fire Safety — Fire Technology, volume 62, issue 5, Article 128, 2026. https://azermane.com/paper-hydrogen-fire-safety.html
 
 ## Research insights
 
@@ -31,5 +38,7 @@ Dr Abderrahim Zermane is a fire and process safety researcher specialising in ph
 - Design Safety MY
 - OSHKKP Malaysia Cloud
 - Amane QHSE Cloud
+
+The website distinguishes measured data, assumptions, reconstructed quantities, model outputs and professional judgement. Prototype and research-alpha projects are labelled by maturity.
 
 For research collaboration or corrections, contact zermane.abderrahim@gmail.com.
