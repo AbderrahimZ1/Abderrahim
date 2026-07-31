@@ -4,28 +4,36 @@ Professional research portfolio for **Dr Abderrahim Zermane**.
 
 ## What is included
 
-- Search-focused homepage with Person and ProfilePage structured data
-- Dedicated biography, publications and projects pages
+- Search-focused homepage with `Person`, `ProfilePage` and `ScholarlyArticle` structured data
+- Dedicated biography, publication, project and flagship-paper pages
 - Research insight articles on fatal falls, explainable machine learning and urban fire modelling
+- Authentic conference photography and author-provided research figures
+- Topic-filtered publication record and accessible enlarged research-figure viewing
 - Tomorrow's Cities, City-scale Fire Spread Model, Open Urban Fire Framework, SEED EIA, Design Safety MY, OSHKKP Malaysia and Amane QHSE project coverage
-- Responsive design, accessible navigation, sitemap, crawler rules and custom 404 page
+- Responsive navigation, reduced-motion support, keyboard focus, sitemap, crawler rules and custom 404 page
 - Google Scholar, ORCID and GitHub identity links
 
-## Free hosting
+## Zero-Actions deployment
 
-This is a static website designed for GitHub Pages. It has no paid server, database, analytics subscription or build dependency.
+This is a static GitHub Pages website. It has:
 
-## Publish on GitHub Pages
+- no custom GitHub Actions workflows;
+- no npm, framework or build pipeline;
+- no Actions artifacts or Actions-based image processing;
+- no paid server, database or analytics dependency.
 
-1. Make this repository **public**.
+Production files are committed directly to the `main` branch. The repository includes `.nojekyll`, allowing GitHub Pages to publish the files from the repository root.
+
+## GitHub Pages settings
+
+1. Keep the repository **public**.
 2. Open **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select **main** and **/(root)**, then save.
-5. In **Custom domain**, enter `azermane.com`.
-6. Configure the apex and `www` DNS records at the domain registrar.
-7. After DNS resolves, enable **Enforce HTTPS**.
+4. Select **main** and **/(root)**.
+5. Keep the custom domain set to `azermane.com`.
+6. Keep **Enforce HTTPS** enabled.
 
-The repository already contains the `CNAME` file for `azermane.com`.
+The repository already contains the `CNAME` file.
 
 ## Main files
 
@@ -33,23 +41,37 @@ The repository already contains the `CNAME` file for `azermane.com`.
 - Biography: `about.html`
 - Publication record: `publications.html`
 - Project portfolio: `projects.html`
+- Flagship papers: `paper-random-forest.html`, `paper-fault-tree.html`, `paper-hydrogen-fire-safety.html`
 - Research articles: `insights/`
-- Homepage design: `styles.css` and `styles-1.css` to `styles-4.css`
-- Content-page design: `content.css`
+- Shared design, navigation and accessibility: `shared.css`
+- Homepage design: `styles.css`, importing `styles-1.css` through `styles-6.css`
+- Content-page design: `content.css`, importing `content-pages.css`
 - Interactions: `script.js`
 - Search files: `robots.txt`, `sitemap.xml`, `llms.txt`
 
-## Photography and paper figures
+## Images
 
-The current build uses the public GitHub portrait and original research graphics so the website remains functional without external image dependencies. Professional photographs from the previous portfolio can replace these once the source page is accessible or the image files are uploaded.
+The live pages use individually named files from `assets/`, including:
 
-For paper visuals, use author-owned figures, accepted-manuscript figures or publisher material with clear reuse permission. Do not add publisher screenshots merely for decoration.
+- `logo.png`
+- `logo_writing.png`
+- `hero-loss-prevention-2025.jpg`
+- `ucl-research-meeting.jpg`
+- `phd-thesis.jpg`
+- `paper-random-forest.png`
+- `paper-fault-tree.png`
+- `paper-hydrogen.png`
+- supporting publication figures
 
-## Search launch checklist
+Old compressed sprite and atlas files were removed after the individual high-resolution images were integrated.
 
-- Verify `azermane.com` as a Domain property in Google Search Console
-- Submit `https://azermane.com/sitemap.xml`
-- Inspect and request indexing for the homepage, biography, publications and projects pages
-- Add `https://azermane.com/` to Google Scholar, ORCID, GitHub and institutional profiles
-- Keep author name, affiliation and ORCID formatting consistent across profiles
-- Publish new research summaries when papers or projects are released
+## Updating the website
+
+Normal edits require only:
+
+1. edit the relevant HTML, CSS or JavaScript file;
+2. commit directly to `main`;
+3. wait for GitHub Pages to refresh;
+4. hard-refresh the browser if an older cached version appears.
+
+No workflow run or build command is required.
