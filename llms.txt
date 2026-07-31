@@ -2,43 +2,21 @@
 
 Official website: https://azermane.com/
 
-Dr Abderrahim Zermane is a fire and process safety researcher working across occupational accident prevention, fault tree analysis, explainable machine learning, hydrogen fire safety, physics-based urban fire modelling and evidence-led engineering systems.
+Dr Abderrahim Zermane is a fire and process safety researcher specialising in physics-based urban fire modelling, occupational accident prevention, fault tree analysis, explainable machine learning, hydrogen fire safety and evidence-led decision systems.
 
-## Author identity
-
-- Google Scholar: https://scholar.google.com/citations?user=9ZkzMtcAAAAJ&hl=en
-- ORCID: https://orcid.org/0000-0001-5040-7704
-- GitHub: https://github.com/AbderrahimZ1
+## Flagship publications
+- Predicting fatal fall from heights accidents using random forest classification machine-learning model — Safety Science 159 (2023) 106023.
+- Risk assessment of fatal accidents due to work-at-heights activities using fault tree analysis — Safety Science 151 (2022) 105724.
+- Linking Accident Data and Physics-Based Modeling for Hydrogen Fire Safety — Fire Technology 62(5) (2026), Article 128.
 
 ## Main pages
-
-- Homepage: https://azermane.com/
 - Biography: https://azermane.com/about.html
 - Publications: https://azermane.com/publications.html
 - Projects: https://azermane.com/projects.html
 
-## Flagship publications
+## Author identity
+- Google Scholar: https://scholar.google.com/citations?user=9ZkzMtcAAAAJ&hl=en
+- ORCID: https://orcid.org/0000-0001-5040-7704
+- GitHub: https://github.com/AbderrahimZ1
 
-1. Predicting fatal fall from heights accidents using random forest classification machine-learning model — Safety Science, 2023. https://azermane.com/paper-random-forest.html
-2. Risk assessment of fatal accidents due to work-at-heights activities using fault tree analysis: Case study in Malaysia — Safety Science, 2022. https://azermane.com/paper-fault-tree.html
-3. Linking Accident Data and Physics-Based Modeling for Hydrogen Fire Safety — Fire Technology, volume 62, issue 5, Article 128, 2026. https://azermane.com/paper-hydrogen-fire-safety.html
-
-## Research insights
-
-- Fatal falls and construction safety in Malaysia: https://azermane.com/insights/fatal-falls-malaysia.html
-- Explainable machine learning for safety: https://azermane.com/insights/explainable-ml-safety.html
-- City-scale urban fire modelling: https://azermane.com/insights/urban-fire-modelling.html
-
-## Selected projects
-
-- Tomorrow's Cities urban fire modelling
-- City-scale Fire Spread Model
-- Open Urban Fire Framework
-- SEED EIA
-- Design Safety MY
-- OSHKKP Malaysia Cloud
-- Amane QHSE Cloud
-
-The website distinguishes measured data, assumptions, reconstructed quantities, model outputs and professional judgement. Prototype and research-alpha projects are labelled by maturity.
-
-For research collaboration or corrections, contact zermane.abderrahim@gmail.com.
+Contact: zermane.abderrahim@gmail.com
