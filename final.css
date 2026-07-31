@@ -1,0 +1,47 @@
+/* Final production safeguards shared by every page. */
+[id]{scroll-margin-top:104px}
+h1,h2,h3{text-wrap:balance}
+p,li{overflow-wrap:break-word}
+.site-header,.content-header{-webkit-backdrop-filter:blur(16px)}
+.publication-filter[aria-pressed="true"]{background:var(--brand-navy);border-color:var(--brand-navy);color:#fff}
+
+/* Keep content available when JavaScript is disabled. */
+@media (scripting:none){
+  .reveal{opacity:1!important;transform:none!important}
+}
+
+/* Avoid oversized tap targets or horizontal overflow on narrow phones. */
+@media(max-width:420px){
+  .hero-actions{gap:10px}
+  .button{width:100%}
+  .profile-links{gap:10px 16px}
+  .flagship-rank{flex-direction:column;gap:5px}
+  .publication-tools{display:grid;grid-template-columns:1fr 1fr}
+  .publication-filter{min-height:42px}
+  .article-meta{gap:8px 14px}
+  .image-lightbox{padding:16px}
+  .image-lightbox button{right:0;top:-50px}
+}
+
+/* Clean printable research pages without navigation or animation. */
+@media print{
+  :root{--paper:#fff;--text:#111;--muted:#444;--line:#bbb}
+  *{box-shadow:none!important;text-shadow:none!important}
+  html{scroll-behavior:auto}
+  body{padding-top:0!important;background:#fff!important;color:#111!important;font-size:11pt}
+  .site-header,.content-header,.menu-button,.header-cta,.hero-actions,.profile-links,.publication-tools,.contact-section,.site-footer,.image-lightbox,.skip-link{display:none!important}
+  .hero,.page-hero,.content-section,.section{padding:24px 0!important;background:#fff!important}
+  .hero{min-height:0!important}
+  .hero-layout,.page-hero.visual>.shell,.visual-paper,.flagship-card,.research-approach,.experience-layout,.teaching-layout,.contact-layout{display:block!important}
+  .hero-visual,.portrait-caption,.model-panel,.project-photo::after{display:none!important}
+  .portrait-wrap,.page-hero.visual img,.research-photo,.project-lead-image,.visual-paper>img,.flagship-media img{max-width:520px!important;height:auto!important;min-height:0!important;margin:18px 0!important;transform:none!important;break-inside:avoid}
+  .flagship-card,.visual-paper,.work,.fact,.topic,.publication{border:1px solid #bbb!important;background:#fff!important;break-inside:avoid}
+  .flagship-copy,.visual-paper>div,.work,.fact,.topic{padding:18px!important}
+  .reveal{opacity:1!important;transform:none!important}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;word-break:break-all}
+  a[href^="mailto:"]::after{content:" (" attr(href) ")";font-size:8pt}
+  h1{font-size:28pt!important}
+  h2{font-size:20pt!important}
+  h3{font-size:15pt!important}
+  @page{margin:16mm}
+}
