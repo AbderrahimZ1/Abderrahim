@@ -10,7 +10,7 @@ Professional research portfolio for **Dr Abderrahim Zermane**.
 - Authentic conference photography and author-provided research figures
 - Topic-filtered publication record and accessible enlarged research-figure viewing
 - Tomorrow's Cities, City-scale Fire Spread Model, Open Urban Fire Framework, SEED EIA, Design Safety MY, OSHKKP Malaysia and Amane QHSE project coverage
-- Responsive navigation, reduced-motion support, keyboard focus, sitemap, crawler rules and custom 404 page
+- Responsive navigation, reduced-motion support, keyboard focus, print styling, sitemap, crawler rules and custom 404 page
 - Google Scholar, ORCID and GitHub identity links
 
 ## Zero-Actions deployment
@@ -46,8 +46,9 @@ The repository already contains the `CNAME` file.
 - Shared design, navigation and accessibility: `shared.css`
 - Homepage design: `styles.css`, importing `styles-1.css` through `styles-6.css`
 - Content-page design: `content.css`, importing `content-pages.css`
+- Final responsive, no-script and print safeguards: `final.css`
 - Interactions: `script.js`
-- Search files: `robots.txt`, `sitemap.xml`, `llms.txt`
+- Search and machine-readable files: `robots.txt`, `sitemap.xml`, `llms.txt`
 
 ## Images
 
